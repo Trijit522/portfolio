@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website</title>
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style1.css">
+    
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/c4254e24a8.js" crossorigin="anonymous"></script>
+    
+    <!-- Bootstrap JavaScript (Popper.js included) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    
+</head>
+<body>
+<div id="header">
+    <div class="container">
+        <nav>
+            <img src="trijit logo1.png" class="logo">
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="fas fa-times" onclick="closemenu()"></i>
+            </ul>
+            <i class="fas fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+            <p>Communication Designer</p>
+            <h1>Hi, I'm <span>Trijit</span><br>Ghosh</h1>
+        </div>
+    </div>
+</div>
+<!-- -----------about---------- -->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="me0.jpeg">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p>As a Communication Designer, I am driven by the belief that design has the power to captivate and influence people's interests, enriching their experiences in meaningful ways. My fascination lies in the realms of graphic design and illustration, where creativity meets purpose. I am passionate about creating visually compelling narratives that connect and resonate with audiences.</p>
+
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>Graphic Design </span><br>Designing Posters and Advertisement</li>
+                        <li><span>Branding</span><br>Branding & Packging</li>
+                        <li><span>Marketing</span><br>Socialmedia campaigns</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="experience">
+                    <ul>
+                        <li><span> Jan 2025 </span><br>Social Media Campaign Designer</li>
+                        <li><span> Dec 2024</span><br> Cultural Promotion Designer</li>
+                        <li><span> Aug 2024</span><br> Student Project: Guddu Detective
+                            Kids’ Book</li>
+                        
+                    </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>2023</span><br>Kendriya Vidyalaya no. 2 kolkata</li>
+                        <li><span>2025 current </span><br>BDES from UID.</li>
+                    
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- ---------services---------------- -->
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+            <div>
+                <i class="fas fa-code"></i>
+                <h2>Graphic Design </h2>
+                <p>Posters,Pamphets,Brochures,
+                    Billboard etc.</p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fas fa-crop-alt"></i>
+                <h2>Illustrations</h2>
+                <p>Illustrations on digital media.</p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fab fa-app-store"></i>
+                <h2>Branding</h2>
+                <p>Branding and packaging.</p>
+                <a href="#">Learn more</a>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- ----------portfolio------------ -->
+<div id="portfolio">
+    <div class="container">
+        <h2>My Work</h2>
+        <div class="work-list">
+            <div class="work">
+                <a href="https://www.behance.net/your-project-link" target="_blank">
+                    <img src="chhau social media one page-01.jpg" alt="Social Media App">
+                </a>
+                <div class="layer">
+                    <h3>Social Media Campaign</h3>
+                    <p>Purulia chhau dance.</p>
+                    <a href="CHHAU PORTFOLIO1.pdf" target="_blank"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <a href="https://www.behance.net/your-project-link" target="_blank">
+                    <img src="santhal portfolio-01.png" alt="Social Media App">
+                </a>
+                <div class="layer">
+                    <h3>Design Process</h3>
+                    <p>Cultural erosion of santhal tribe.</p>
+                    <a href="SANTHAL RESEARCH JOURNEY.pdf" target="_blank"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>    
+            <div class="work">
+                <a href="https://www.behance.net/your-project-link" target="_blank">
+                    <img src="chindizzle-02.png" alt="Social Media App">
+                </a>
+                <div class="layer">
+                    <h3>Branding</h3>
+                    <p>Chindizzle Branding & Packaging.</p>
+                    <a href="chindizzel PORTFOLIO.pdf" target="_blank"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div> 
+        </div>
+        <a href="#" class="btn">See more</a>
+    </div>
+</div>
+<!-- ----------contact------------- -->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact </h1>
+                <p><i class="fas fa-paper-plane"></i> trijitofficial29@gmail.com</p>
+                <p><i class="fas fa-phone-square-alt"></i> 7980223530</p>
+                <p><i class="fas fa-phone-square-alt"></i> </p>
+                <div class="social-icons">
+                    <a href="https://www.linkedin.com/in/trijitghosh" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a>
+                    <a href="https://www.behance.net/trijitghosh" target="_blank"><i class="fab fa-behance"></i> Behance</a>
+            
+                    
+                    <a href="https://facebook.com/"><i class="fab fa-facebook"></i></a>
+                    <a href="https://twitter.com/"><i class="fab fa-twitter-square"></i></a>
+                    <a href="https://instagram.com/"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com/in/trijitghosh"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://www.behance.net/trijitghosh"><i class="fab fa-behance"></i></a>
+                </div>
+                <a href="RESUME TRIJIT GHOSH.pdf" download class="btn btn2">Download Resume</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+</div>
+
+    <div class="copyright">
+        <p>Copyright © Trijit Ghosh <i class="fas fa-heart"></i> <a href= ></a></p>
+    </div>
+</div>
+
+
+
+<script>
+
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+
+</script>
+
+<script>
+
+    var sidemeu = document.getElementById("sidemenu");
+
+    function openmenu(){
+        sidemeu.style.right = "0";
+    }
+    function closemenu(){
+        sidemeu.style.right = "-200px";
+    }
+
+</script>
+<script>
+    const scriptURL = '< add you own link here >' // add your own app script link here
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message sent successfully"
+            setTimeout(function(){
+                msg.innerHTML = ""
+            },5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+</body>
+</html>
